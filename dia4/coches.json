@@ -1,0 +1,62 @@
+[
+    {
+        "marca": "Toyota",
+        "modelo": "Camry",
+        "cilindrada": "2.5L",
+        "velocidad_maxima": "210 km/h"
+    },
+    {
+        "marca": "Honda",
+        "modelo": "Civic",
+        "cilindrada": "2.0L",
+        "velocidad_maxima": "220 km/h"
+    },
+    {
+        "marca": "Ford",
+        "modelo": "Mustang",
+        "cilindrada": "5.0L",
+        "velocidad_maxima": "250 km/h"
+    },
+    {
+        "marca": "BMW",
+        "modelo": "Serie 3",
+        "cilindrada": "2.0L",
+        "velocidad_maxima": "240 km/h"
+    },
+    {
+        "marca": "Audi",
+        "modelo": "A4",
+        "cilindrada": "2.0L",
+        "velocidad_maxima": "235 km/h"
+    },
+    {
+        "marca": "Mercedes-Benz",
+        "modelo": "Clase C",
+        "cilindrada": "2.0L",
+        "velocidad_maxima": "230 km/h"
+    },
+    {
+        "marca": "Volkswagen",
+        "modelo": "Golf",
+        "cilindrada": "1.4L",
+        "velocidad_maxima": "200 km/h"
+    },
+    {
+        "marca": "Nissan",
+        "modelo": "Altima",
+        "cilindrada": "2.5L",
+        "velocidad_maxima": "215 km/h"
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Malibu",
+        "cilindrada": "2.0L",
+        "velocidad_maxima": "220 km/h"
+    },
+    {
+        "marca": "Kia",
+        "modelo": "Optima",
+        "cilindrada": "2.4L",
+        "velocidad_maxima": "210 km/h"
+    }
+]

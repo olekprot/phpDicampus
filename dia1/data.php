@@ -1,6 +1,6 @@
 <?php 
     $dates = [
-        'name'=>  'Tom',
+        'name'=> 'Tom',
         'age' => 20,
         'gender' => 'male',
         'hobby' => 'football',
