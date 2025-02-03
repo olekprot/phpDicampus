@@ -15,6 +15,7 @@
         <li><a href="http://aaa.local/dia1/pagina1.php">Dia 1(Creamos footer y header en PHP)</a></li>
         <li><a href="http://aaa.local/dia2/texto.php">Dia 2(Usamos "ECHO")</a></li>
         <li><a href="http://aaa.local/dia3/random.php">Dia 3(Random Colores, alumnos y cursos)</a></li>
+        <li><a href="http://aaa.local/dia4/random.php">Dia 3(Random Colores, alumnos y cursos)</a></li>
         
     </ul>
 </body>
