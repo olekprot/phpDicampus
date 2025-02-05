@@ -1,18 +1,13 @@
-<?php
-    include 'includes/config.php';
-    include 'includes/footer.php';
-    include 'includes/header.php';
-
+<? $titulo ="😴 Bienvenidos";
+   $descApt="Toy en la pagina de incio";
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebPHP</title>
-</head>
-<body>
+<?php require 'includes/config.php'?> 
+<?php include 'includes/header.php'?>
+<!-- aquí el contenido -->
+    <h2>Disfruta de la Astronomía como nunca lo has hecho</h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellendus iste molestiae? Nihil consequuntur ratione obcaecati, laboriosam sunt enim asperiores rerum quaerat nam fugit debitis nobis suscipit laborum quos. Modi?</p>
+
     
-</body>
-</html>
+
+<?php include 'includes/footer.php'?> 
