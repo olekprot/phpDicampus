@@ -1,0 +1,46 @@
+{
+    "menu": [
+        {
+            "nombre": "Paella Valenciana",
+            "foto": "https://www.johaprato.com/files/styles/flexslider_full/public/paella_valenciana.jpg?itok=mTseo4VW",
+            "ingredientes": ["Arroz", "Pollo", "Conejo", "Judías verdes", "Tomate", "Aceite de oliva", "Sal"],
+            "precio": "15.00 EUR",
+            "peso": "500g"
+        },
+        {
+            "nombre": "Gazpacho Andaluz",
+            "foto": "https://cdn.recetasderechupete.com/wp-content/uploads/2020/05/Gazpacho-andaluz-Ajustes-de-rechupete-2.jpg",
+            "ingredientes": ["Tomate", "Pepino", "Pimiento", "Ajo", "Aceite de oliva", "Vinagre", "Sal"],
+            "precio": "7.00 EUR",
+            "peso": "300g"
+        },
+        {
+            "nombre": "Tortilla Española",
+            "foto": "https://cdn.elcocinerocasero.com/imagen/receta/1000/2022-06-15-19-04-10/tortilla-de-patata.webp",
+            "ingredientes": ["Huevos", "Patatas", "Cebolla", "Aceite de oliva", "Sal"],
+            "precio": "6.50 EUR",
+            "peso": "250g"
+        },
+        {
+            "nombre": "Pulpo a la Gallega",
+            "foto": "https://recetasdecocina.elmundo.es/wp-content/uploads/2024/10/pulpo-a-la-gallega-1024x683.jpg",
+            "ingredientes": ["Pulpo", "Patatas", "Pimentón", "Aceite de oliva", "Sal"],
+            "precio": "12.00 EUR",
+            "peso": "350g"
+        },
+        {
+            "nombre": "Churros con Chocolate",
+            "foto": "https://imag.bonviveur.com/chocolate-con-churros.jpg",
+            "ingredientes": ["Harina", "Agua", "Sal", "Aceite para freír", "Chocolate"],
+            "precio": "5.00 EUR",
+            "peso": "200g"
+        },
+        {
+            "nombre": "Flan Casero",
+            "foto": "https://imag.bonviveur.com/flan-napolitano-foto-principal.jpg",
+            "ingredientes": ["Huevos", "Leche", "Azúcar", "Vainilla"],
+            "precio": "4.50 EUR",
+            "peso": "150g"
+        }
+    ]
+}

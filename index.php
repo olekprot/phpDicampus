@@ -36,6 +36,8 @@
         <li><a href="http://aaa.local/dia3/random.php">Dia 3(Random Colores, alumnos y cursos)</a></li>
         <li><a href="http://aaa.local/dia4/coches.php">Dia 4(JSON)</a></li>
         <li><a href="http://aaa.local/dia5/webPHP.php">Dia5(webPHP)</a></li>
+        <li><a href="http://aaa.local/JSON/json2/json.php">Json2</a></li>
+        <li><a href="http://aaa.local/menuRest/menu.php">Menu del restaurante</a></li>
         
     </ul>
 </body>

@@ -66,7 +66,7 @@ function constructorMenu($menu) {
             <ul>';
     foreach ($menu as $item) {
         echo  ' <li class="' . $item['cls'] . '">
-                    <a href="' . $item['Lkn']. '" target="_blanck">'.$item['txt'].'</a>
+                    <a href="' . $item['Lkn']. '"; target="_blanck">'.$item['txt'].'</a>
                 </li>';
                };
         echo  '</ul>
@@ -86,5 +86,14 @@ function constructorFooter($footerMenu){
                };
         echo  '</ul>
     </nav>';
+}
+
+/*Constructor del telefono*/
+/*Format +34 600 500 400*/
+function convertorTelefono($numero) {
+    $numeroFormateado = str_replace([' ', '+'],'', $numero);
+    
+
+    return $tel 
 }
 ?>
