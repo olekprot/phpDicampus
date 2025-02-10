@@ -1,78 +1,56 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú del Restaurante</title>
-    <style>
-        .conteiner {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        h1{
-            text-align: center;
-        }
-        .menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .plato {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 10px;
-            width: calc(33.333% - 40px);
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            transition: .5s;
-        }
-        .plato:hover,
-        button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        }
-        .plato img {
-            max-width: 100%;
-            border-radius: 10px;
-            aspect-ratio: 1.5/1;
-        }
-        .plato h2 {
-            margin-top: 0;
-        }
-        button{
-            text-align: center;
-            width: 70%;
-            border: none;
-            background-color: tan;
-            border-radius: 10px;
-            padding: 10px 20px;
-            transition: .5s;
-        }
-        .ingredientes {
-            display: none;
-            margin-top: 10px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="conteiner">
-        <h1>Menú del Restaurante</h1>
-        <div class="menu">
-            <?php include 'generador.php';?>
-        </div>
-    </div>
 
-    <script>
-        function toggleIngredientes(index) {
-            var ingredientesDiv = document.getElementById('ingredientes-' + index);
-            if (ingredientesDiv.style.display === 'block' || ingredientesDiv.style.display === '') {
-                ingredientesDiv.style.display = 'none';
-            } else {
-                ingredientesDiv.style.display = 'block';
-            }
+<?php
+$titulo = 'Carta de Restaurante';
+require 'config.php';
+include 'component/header.php';
+
+$archivo = 'menu.json';
+
+if (file_exists($archivo)) {
+    $miJSON = file_get_contents($archivo);
+    $miArray = json_decode($miJSON, true);
+
+    // Organizar platos por tipo
+    $categorias = [
+        'entrada' => [],
+        'primer plato' => [],
+        'segundo plato' => [],
+        'postre' => [],
+        'bebidas' => []
+    ];
+
+    foreach ($miArray['carta'] as $plato) {
+        if ($plato['visible'] == 1) { // Solo mostrar platos visibles
+            $categorias[$plato['tipo']][] = $plato;
         }
-        
-</script>
-</body>
-</html>
+    }
+
+    echo '<div class="carta">';
+
+    foreach ($categorias as $tipo => $platos) {
+        if (!empty($platos)) {
+            echo "<h2>" . ucfirst($tipo) . "</h2>"; // Capitaliza la primera letra
+            echo '<ul class="galeria">';
+            foreach ($platos as $plato) {
+                echo "<li class='plato' 
+                data-nombre='{$plato['nombre']}'
+                data-ingredientes='{$plato['ingredientes']}'
+                data-precio='{$plato['precio']}€'>
+                <h3>{$plato['nombre']}</h3>
+                <p>{$plato['ingredientes']}</p>
+                <span>{$plato['precio']}€</span>
+                <a href='plato.php?nombre=" . urlencode($plato['nombre']) . "' class='btn'>Ver ficha</a>
+
+                </li>";
+            }
+            echo '</ul>';
+        }
+    }
+
+    echo '</div>';
+} else {
+    echo "<p class='error'>ERROR: No hemos podido cargar los datos.</p>";
+}
+
+include 'component/footer.php';
+?>

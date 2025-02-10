@@ -1,46 +1,110 @@
 {
-    "menu": [
+    "carta": [
         {
-            "nombre": "Paella Valenciana",
-            "foto": "https://www.johaprato.com/files/styles/flexslider_full/public/paella_valenciana.jpg?itok=mTseo4VW",
-            "ingredientes": ["Arroz", "Pollo", "Conejo", "Judías verdes", "Tomate", "Aceite de oliva", "Sal"],
-            "precio": "15.00 EUR",
-            "peso": "500g"
+            "nombre": "Fabada Asturiana",
+            "ingredientes": "Fabes asturianes, chorizo, morciella, lacón, azafrán, aceite de oliva, cebolla",
+            "precio": "18",
+            "tipo": "Primer Plato",
+            "visible": 1
         },
         {
             "nombre": "Gazpacho Andaluz",
-            "foto": "https://cdn.recetasderechupete.com/wp-content/uploads/2020/05/Gazpacho-andaluz-Ajustes-de-rechupete-2.jpg",
-            "ingredientes": ["Tomate", "Pepino", "Pimiento", "Ajo", "Aceite de oliva", "Vinagre", "Sal"],
-            "precio": "7.00 EUR",
-            "peso": "300g"
+            "ingredientes": "Tomate, pepino, pimiento, cebolla, ajo, aceite de oliva, vinagre, pan",
+            "precio": "10",
+            "tipo": "Entrante",
+            "visible": 1
         },
         {
-            "nombre": "Tortilla Española",
-            "foto": "https://cdn.elcocinerocasero.com/imagen/receta/1000/2022-06-15-19-04-10/tortilla-de-patata.webp",
-            "ingredientes": ["Huevos", "Patatas", "Cebolla", "Aceite de oliva", "Sal"],
-            "precio": "6.50 EUR",
-            "peso": "250g"
+            "nombre": "Croquetas de Jamón",
+            "ingredientes": "Jamón serrano, leche, harina, mantequilla, pan rallado, huevo, aceite para freír",
+            "precio": "8",
+            "tipo": "Entrante",
+            "visible": 1
         },
         {
-            "nombre": "Pulpo a la Gallega",
-            "foto": "https://recetasdecocina.elmundo.es/wp-content/uploads/2024/10/pulpo-a-la-gallega-1024x683.jpg",
-            "ingredientes": ["Pulpo", "Patatas", "Pimentón", "Aceite de oliva", "Sal"],
-            "precio": "12.00 EUR",
-            "peso": "350g"
+            "nombre": "Pastel de Cabracho",
+            "ingredientes": "Cabracho, nata, huevos, tomate, pimiento, cebolla, pan rallado",
+            "precio": "12",
+            "tipo": "Entrante",
+            "visible": 1
         },
         {
-            "nombre": "Churros con Chocolate",
-            "foto": "https://imag.bonviveur.com/chocolate-con-churros.jpg",
-            "ingredientes": ["Harina", "Agua", "Sal", "Aceite para freír", "Chocolate"],
-            "precio": "5.00 EUR",
-            "peso": "200g"
+            "nombre": "Ensalada de Queso de Cabra",
+            "ingredientes": "Lechuga variada, queso de cabra, frutos secos, vinagreta de miel",
+            "precio": "11",
+            "tipo": "Entrante",
+            "visible": 1
         },
         {
-            "nombre": "Flan Casero",
-            "foto": "https://imag.bonviveur.com/flan-napolitano-foto-principal.jpg",
-            "ingredientes": ["Huevos", "Leche", "Azúcar", "Vainilla"],
-            "precio": "4.50 EUR",
-            "peso": "150g"
+            "nombre": "Picadillo con Huevo y Patates",
+            "ingredientes": "Picadillo de cerdo, patatas fritas, aceite, huevos de la aldea",
+            "precio": "14",
+            "tipo": "Primer Plato",
+            "visible": 1
+        },
+        {
+            "nombre": "Lacón con Pulpo",
+            "ingredientes": "Pulpo, lacón, aceite de oliva, pimentón",
+            "precio": "15",
+            "tipo": "Entrante",
+            "visible": 1
+        },
+        {
+            "nombre": "Cachopo Asturiano",
+            "ingredientes": "Ternera, jamón serrano, queso, pan rallado, huevo, aceite",
+            "precio": "22",
+            "tipo": "Segundo Plato",
+            "visible": 1
+        },
+        {
+            "nombre": "Merluza a la Sidra",
+            "ingredientes": "Merluza, sidra asturiana, cebolla, ajo, almejas",
+            "precio": "20",
+            "tipo": "Segundo Plato",
+            "visible": 1
+        },
+        {
+            "nombre": "Arroz Caldoso con Bogavante",
+            "ingredientes": "Arroz, bogavante, caldo de pescado, pimiento, ajo",
+            "precio": "28",
+            "tipo": "Segundo Plato",
+            "visible": 1
+        },
+        {
+            "nombre": "Carrilleras al Vino Tinto",
+            "ingredientes": "Carrilleras de cerdo, vino tinto, cebolla, zanahoria, ajo",
+            "precio": "19",
+            "tipo": "Segundo Plato",
+            "visible": 1
+        },
+        {
+            "nombre": "Tarta de Queso al Horno",
+            "ingredientes": "Queso crema, nata, huevos, azúcar, galleta",
+            "precio": "7",
+            "tipo": "Postre",
+            "visible": 1
+        },
+        {
+            "nombre": "Pannacota",
+            "ingredientes": "Nata, azúcar, gelatina, vainilla, frutos rojos",
+            "precio": "7",
+            "tipo": "Postre",
+            "visible": 1
+        },
+        {
+            "nombre": "Arroz con Leche",
+            "ingredientes": "Arroz, leche, azúcar, canela, limón",
+            "precio": "6",
+            "tipo": "Postre",
+            "visible": 1
+        },
+        {
+            "nombre": "Coulant de Chocolate",
+            "ingredientes": "Chocolate negro, mantequilla, huevos, harina, azúcar",
+            "precio": "8",
+            "tipo": "Postre",
+            "visible": 1
         }
     ]
 }
+    

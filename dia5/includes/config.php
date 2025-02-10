@@ -94,6 +94,7 @@ function convertorTelefono($numero) {
     $numeroFormateado = str_replace([' ', '+'],'', $numero);
     
 
-    return $tel 
-}
+    return $tel;
+    };
+
 ?>

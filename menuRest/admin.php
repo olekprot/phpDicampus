@@ -1,47 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="admin.php" method="get">
-        <label for="">
-            <input type="text" id="nombreNewPlato">
-        </label>
-        <label for="">
-            <input type="text" id="peso">
-        </label>
-        <label for="">
-            <input type="text" id="ingredientes">
-        </label>
-        <label for="">
-            <input type="text" id="precio">
-        </label>
-        <input type="submit" value="Send"> 
-    </form>
+<?php
+$titulo = 'Carta de Restaurante';
+include 'config.php';
+include 'component/header.php';
 
+$archivo = 'menu.json';
 
-    <?php
-    if(isset($_GET['nombreNewPlato'])){
-        $nombreNewPlato = $_GET['nombreNewPlato'];
-        $ingredientes = $_GET['ingredientes'];
-        $precioNew = $_GET['precio'];
-        $peso = $_GET['peso'];
+// Cargar JSON y convertirlo en array PHP
+if (file_exists($archivo)) {
+    $miJSON = file_get_contents($archivo);
+    $miArray = json_decode($miJSON, true);
 
+    if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['nombrePlato'])) {
+        // Capturar y sanitizar datos del formulario
+        $nombrePlato = htmlspecialchars($_POST['nombrePlato']);
+        $ingredientes = htmlspecialchars($_POST['ingredientes']);
+        $precio = floatval($_POST['precio']);
+        $tipo = in_array($_POST['tipo'], ['entrada', 'primer plato', 'segundo plato', 'postre', 'bebidas']) ? $_POST['tipo'] : 'entrada';
+        $visible = isset($_POST['visible']) ? 1 : 0;
 
-        array_push($archivoJson['menu'].['nombre'=>$nombreNewPlato, 'ingredientes'=>$ingredientes, 'peso'=>$peso, 'precio' => $precioNew]);
-        $contenidoJson = json_encode($archivoJson, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-        file_put_contents($archivoJson, $contenidoJson);
+        // Agregar nuevo plato al array
+        $miArray['carta'][] = [
+            'nombre' => $nombrePlato,
+            'ingredientes' => $ingredientes,
+            'precio' => $precio,
+            'tipo' => $tipo,
+            'visible' => $visible
+        ];
 
+        // Guardar cambios en el JSON
+        file_put_contents($archivo, json_encode($miArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
 
-
+        echo "<div>
+            <h2>Plato agregado con éxito</h2>
+            <h3>$nombrePlato</h3>
+            <p><strong>Ingredientes:</strong> $ingredientes</p>
+            <p><strong>Precio:</strong> $precio €</p>
+            <p><strong>Tipo:</strong> $tipo</p>
+            <p><strong>Visible:</strong> " . ($visible ? 'Sí' : 'No') . "</p>
+            <a href='index.php'>Ver Carta</a>
+        </div>";
     }
-       
+} else {
+    echo "ERROR: No hemos podido cargar los datos";
+}
+?>
 
-    
-    
-    ?>
-</body>
-</html>
+<form action="" method="post">
+    <input type="text" name="nombrePlato" placeholder="Nombre del plato" required>
+    <textarea name="ingredientes" placeholder="Ingredientes" required></textarea>
+    <input type="number" name="precio" placeholder="Precio (€)" step="0.01" required>
+
+    <label for="tipo">Tipo:</label>
+    <select name="tipo" required>
+        <option value="entrada">Entrada</option>
+        <option value="primer plato">Primer Plato</option>
+        <option value="segundo plato">Segundo Plato</option>
+        <option value="postre">Postre</option>
+        <option value="bebidas">Bebidas</option>
+    </select>
+
+    <label>
+        <input type="checkbox" name="visible" value="1" checked>
+        Visible en la carta
+    </label>
+
+    <input type="submit" value="Guardar Plato">
+</form>
+
+<?php include 'component/footer.php'; ?>
