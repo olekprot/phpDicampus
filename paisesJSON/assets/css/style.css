@@ -1,3 +1,33 @@
+
+body {
+  background-color: #f9bdbd;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/*Header*/
+nav>ul {
+  display: flex;
+
+}
+nav>ul>li {
+  list-style: none;
+  padding: 20px;
+  margin: 0 auto;
+  
+}
+nav>ul>li>a {
+  text-decoration: none;
+  color: rgb(55, 51, 45);
+  border-bottom: 2px solid rgb(55, 51, 45);
+  font-size: 25px;
+
+}
+h1 {
+  text-align: center;
+}
+
+
+/*Main*/
 .paises {
     list-style: none;
     color: tan;
@@ -17,11 +47,15 @@
     border-bottom: 2px solid tan;
 }
 .paises p {
-
     padding: 4px;
     background-color: tan;
     color: rgb(55, 51, 45);
     border-radius: 6px;
+}
+.paises img{
+  max-width: 100px;
+  aspect-ratio: 1.5/1;
+  margin: 0 auto;
 }
 .listaDePaises {
     display: flex;
@@ -76,6 +110,46 @@
     font-weight: 700;
     box-shadow: 1px 4px 10px 1px black;
     background: tan;
-;
-   
+
+  }
+
+  /*Mobile*/
+  .container_grande {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+
+  }
+  .mobile_container {
+    height: 600px;
+    width: 450px;
+    background-color: rgb(55, 51, 45);
+    margin: 10px;
+    border-radius: 35px;
+    border: 10px solid black;
+  }
+  .listaDePaisesMobile1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  .mobile_paises {
+    list-style: none;
+    margin: 10px;
+  }
+  .mobile_paises img{
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 25px;
+  }
+  .button_mobile_list {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
   }

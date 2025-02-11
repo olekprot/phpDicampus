@@ -13,13 +13,14 @@
     foreach($miArray['countries'] as $miPais) {
         echo '<li class="paises"> 
                 <h2>'.$miPais['name'].'</h2>
+                <img src="'.$miPais['flag'].'">
                 <p> Populacion: '.$miPais['population'].'</p>
                 <p> Area: '.$miPais['area'].'</p>
                 <p> Capital: '.$miPais['capital'].'</p>
              </li>';
 
     };
-    
+    echo '</ul>';
 
 
 

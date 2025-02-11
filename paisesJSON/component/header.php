@@ -13,7 +13,9 @@
             <ul>
                 <li><a href="paises.php">Inicio</a></li>
                 <li><a href="administrador.php">Administrador</a></li>
+                <li><a href="mobile.php">Mobile</a></li>
                 <li><a href="contacto.php">Contacto</a></li>
+
             </ul>
         </nav>
     </header>
