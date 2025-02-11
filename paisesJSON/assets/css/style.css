@@ -99,7 +99,8 @@ h1 {
     font-size: 0.8em;
   }
   
-  #feedback-form input[type=submit] {
+  #feedback-form input[type=submit],
+  .button_borrar {
     display: block;
     margin: 20px auto 0;
     width: 150px;

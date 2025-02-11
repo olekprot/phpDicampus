@@ -3,11 +3,7 @@
 <?php include_once 'component/header.php'; ?>
 
 <?php
-    
-
     $archivo = 'assets/datos/paises.json';
-    //debugPrint_r(cargadorJSON($archivo)); /*Para Imprimir mi JSON en formato normal*/
-
     $miArray = cargadorJSON($archivo);
     echo '<ul class="listaDePaises">';
     foreach($miArray['countries'] as $miPais) {
@@ -18,14 +14,8 @@
                 <p> Area: '.$miPais['area'].'</p>
                 <p> Capital: '.$miPais['capital'].'</p>
              </li>';
-
     };
     echo '</ul>';
-
-
-
-
-
 ?>
 
 <?php include_once 'component/footer.php'; ?>

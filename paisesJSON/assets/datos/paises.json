@@ -34,6 +34,20 @@
             "area": "312696",
             "capital": "Varsovia",
             "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/800px-Flag_of_Poland.svg.png"
+        },
+        {
+            "name": "Países Bajos",
+            "population": "17302116",
+            "area": "41543",
+            "capital": "Ámsterdam",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png"
+        },
+        {
+            "name": "Bulgaria",
+            "population": "6447710",
+            "area": "110879",
+            "capital": "Sofía",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/203px-Flag_of_Bulgaria.svg.png"
         }
     ]
 }

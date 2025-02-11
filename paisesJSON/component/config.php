@@ -6,7 +6,6 @@
             echo $message . "\n";
         }
     }
-    debug('Hola, estas en modo desarrollo');
     /*Imprimir mi JSON*/
     function debugPrint_r($array){
         global $debug;

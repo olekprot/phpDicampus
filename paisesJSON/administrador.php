@@ -29,9 +29,6 @@
 </div>
 <!-- Fin HTML -->
 <?php
-    
-
-
     if (isset($_GET['submitButton'])) {
         //Cargador datos del JSON
         $nombre = $_GET['name'];
@@ -47,7 +44,6 @@
             echo '123';
         }
       
-
        //Cargar datos que recogemos de los inputs
         $miArray = cargadorJSON('assets/datos/paises.json');
         //Anadir al array los datos
@@ -58,9 +54,6 @@
         file_put_contents('assets/datos/paises.json' ,$miJSON);
     }
 
-
-
-    
 ?>
 <?php include_once 'component/footer.php'; ?>
 
