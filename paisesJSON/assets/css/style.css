@@ -1,0 +1,81 @@
+.paises {
+    list-style: none;
+    color: tan;
+    background-color: rgb(55, 51, 45);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    max-width: 50vh;
+    box-shadow: 5px 5px 2px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.paises h2{
+    font-weight: 700;
+    font-size: 30px;
+    border-bottom: 2px solid tan;
+}
+.paises p {
+
+    padding: 4px;
+    background-color: tan;
+    color: rgb(55, 51, 45);
+    border-radius: 6px;
+}
+.listaDePaises {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Administrador form*/
+#feedback-form {
+    width: 280px;
+    margin: 0 auto;
+    background-color: rgb(55, 51, 45);
+    padding: 20px 50px 40px;
+    box-shadow: 1px 4px 10px 2px tan;
+    font-family: sans-serif;
+    color: tan;
+  }
+  
+  #feedback-form * {
+      box-sizing: border-box;
+  }
+  
+  #feedback-form h2{
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid tan;
+  }
+  
+  #feedback-form input {
+    margin-bottom: 15px;
+  }
+  
+  #feedback-form input[type=text] {
+    display: block;
+    height: 32px;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color: tan;
+  }
+  #feedback-form label {
+    color: #777;
+    font-size: 0.8em;
+  }
+  
+  #feedback-form input[type=submit] {
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    color: rgb(55, 51, 45);
+    font-weight: 700;
+    box-shadow: 1px 4px 10px 1px black;
+    background: tan;
+;
+   
+  }

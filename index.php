@@ -39,6 +39,7 @@
         <li><a href="http://aaa.local/JSON/json2/json.php">Json2</a></li>
         <li><a href="http://aaa.local/menuRest/menu.php">Menu del restaurante</a></li>
         <li><a href="http://aaa.local/funciones/index.php">Dia 7(Funciones)</a></li>
+        <li><a href="http://aaa.local/paisesJSON/paises.php">Paises(JSON)</a></li>
         
     </ul>
 </body>
