@@ -7,7 +7,6 @@ function addPais() {
         button.addEventListener('click', function() {
             selectedButtonValue = button.value;
             processButtonValue(selectedButtonValue);
-            
         });
     });
 }
@@ -19,7 +18,9 @@ function processButtonValue(value) {
         const matchedCountry = jsonData.countries.find(country => country.name === value);
         if (matchedCountry) {
             const content = `
-                <li class="paises"> 
+                <i>Speaker</i>
+                <b>Camera</b>
+                <li class="paises_new"> 
                     <h2>${matchedCountry.name}</h2>
                     <img src="${matchedCountry.flag}" alt="Flag of ${matchedCountry.name}">
                     <p>Populacion:: ${matchedCountry.population}</p>
@@ -36,10 +37,11 @@ function processButtonValue(value) {
         console.error('Error fetching the JSON data:', error);
     });
 
-}
+};
+
 function borrar() {
     let pais = document.querySelector('#imprimirPais');
-    pais.innerHTML = '';
+    pais.innerHTML = location.reload();
 }
 
 

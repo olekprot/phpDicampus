@@ -2,8 +2,10 @@
 <?php require 'component/config.php'; ?>
 <?php include_once 'component/header.php'; ?>
 
-<div class="container_grande">
-    <div class="mobile_container">
+<div class="container_grande" >
+    <div class="iphone-x" id="imprimirPais">
+        <i>Speaker</i>
+        <b>Camera</b>
         <?php
         $archivo = 'assets/datos/paises.json';
         $miArray = cargadorJSON($archivo);
@@ -18,7 +20,6 @@
         echo '</ul>';
         ?>
     </div>
-    <div class="mobile_container" id="imprimirPais"></div>
 </div>
 
 <?php include_once 'component/footer.php'; ?>
