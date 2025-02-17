@@ -5,6 +5,10 @@ body {
   margin: 0 auto;
 }
 /*Header*/
+nav {
+  display:flex;
+  justify-content: space-between;
+}
 nav>ul {
   display: flex;
 
@@ -97,7 +101,8 @@ h1 {
     margin-bottom: 15px;
   }
   
-  #feedback-form input[type=text] {
+  #feedback-form input[type=text],
+  #feedback-form input[type=password] {
     display: block;
     height: 32px;
     padding: 6px 16px;

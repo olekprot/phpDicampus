@@ -1,6 +1,5 @@
 
 <?php $t='Admin';?>
-<?php require 'component/config.php'; ?>
 <?php include_once 'component/header.php'; ?>
 
 <!-- HTML -->

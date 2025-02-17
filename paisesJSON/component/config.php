@@ -1,11 +1,25 @@
 <?php 
-    $debug = true;
+
+    //Para LOGIN
+    session_start();
+    if(isset($_SESSION['logeado'])) {
+        echo "<p> + Estas logeado</p>";
+        $logeado = true;
+    } else {
+        echo "<p> - No estas logeado</p>";
+        $logeado = false;
+    }
+
+
+    //Para DEBUG
+    $debug = false;
     function debug($message){
         global $debug;
         if($debug){
             echo $message . "\n";
         }
     }
+
     /*Imprimir mi JSON*/
     function debugPrint_r($array){
         global $debug;

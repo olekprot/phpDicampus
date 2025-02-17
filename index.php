@@ -40,6 +40,7 @@
         <li><a href="http://aaa.local/menuRest/menu.php">Menu del restaurante</a></li>
         <li><a href="http://aaa.local/funciones/index.php">Dia 7(Funciones)</a></li>
         <li><a href="http://aaa.local/paisesJSON/paises.php">Paises(JSON)</a></li>
+        <li><a href="http://aaa.local/sesion1/index.php">Sesion</a></li>
         
     </ul>
 </body>

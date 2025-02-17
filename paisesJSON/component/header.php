@@ -12,10 +12,19 @@
         <nav>
             <ul>
                 <li><a href="paises.php">Inicio</a></li>
-                <li><a href="administrador.php">Administrador</a></li>
+                <li><a href="login.php">Administrador</a></li>
                 <li><a href="mobile.php">Mobile</a></li>
                 <li><a href="contacto.php">Contacto</a></li>
-
+            </ul>
+            <ul>
+                <?php 
+                    if($logeado){
+                        echo '<li><a href="login.php">Login con AVATAR</a></li>';
+                    } else {
+                        echo '<li><a href="login.php">Login</a></li>';
+                    }
+                ?>
+                <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
     </header>
