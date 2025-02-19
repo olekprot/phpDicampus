@@ -41,6 +41,7 @@
         <li><a href="http://aaa.local/funciones/index.php">Dia 7(Funciones)</a></li>
         <li><a href="http://aaa.local/paisesJSON/paises.php">Paises(JSON)</a></li>
         <li><a href="http://aaa.local/PHP_SESIONES-main/index.php">Sesion</a></li>
+        <li><a href="http://aaa.local/MySQL/index.php">MySQL</a></li>
         
     </ul>
 </body>
