@@ -43,6 +43,9 @@
         <li><a href="http://aaa.local/PHP_SESIONES-main/index.php">Sesion</a></li>
         <li><a href="http://aaa.local/MySQL/index.php">MySQL</a></li>
         <li><a href="http://aaa.local/Examen_PHP_Protyniak/index.php">ExamenPHP-Movie</a></li>
+        <li><a href="http://aaa.local/MySQL/index.php">MySQL</a></li>
+        <li><a href="http://aaa.local/BDList/index.php">Basa de datos con clubs</a></li>
+        <li><a href="http://aaa.local/listaDeAlumnos/index.php">Lista de alumnos en mobile</a></li>
         
     </ul>
 </body>
