@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumno</title>
+    <style>
+
+.alumno_container {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  background: lighten(navajowhite, 10);
+}
+
+.alumno_card {
+  position: relative;
+  height: 520px;
+  width: 300px;
+  background: #fff;
+  margin: 100px auto 0;
+  overflow: hidden;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+  hr {
+    margin: 0 30px;
+  }
+}
+
+.alumno_border {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 490px;
+  width: 270px;
+  border: 3px double #aaa;
+}
+
+.alumno_avatar {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  overflow: hidden;
+  margin: 50px auto 30px;
+  img {
+    width: 200px;
+    margin-left: -10px;
+  }
+}
+.alumno_stats {
+  font-family: 'Oswald', sans-serif;
+  padding: 0;
+  height: 250px;
+  width: 300px;
+}
+.alumno_stats div {
+    padding: 10px 0 0 25px;
+  }
+.alumno_stats p {
+    margin: 5px;
+  }
+.alumno_stats h2 {
+    text-align: center;
+    font-family: 'Papyrus', cursive;
+    font-size: 2.2em;
+    margin: 5px 0 10px;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="alumno_container">
+        <div class="alumno_card">
+          <div class="alumno_border"></div>
+          <div class="alumno_avatar">
+            <img src="https://picsum.photos/id/237/200/300" alt="Logo" />
+          </div>
+          <hr />
+          <div class="alumno_stats">
+            <h2>Nombre</h2>
+            <hr />
+            <div>
+              <p>Email</p>
+              <p>Phone</p>
+              <p>Curso</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

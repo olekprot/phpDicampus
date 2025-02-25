@@ -46,6 +46,8 @@
         <li><a href="http://aaa.local/MySQL/index.php">MySQL</a></li>
         <li><a href="http://aaa.local/BDList/index.php">Basa de datos con clubs</a></li>
         <li><a href="http://aaa.local/listaDeAlumnos/index.php">Lista de alumnos en mobile</a></li>
+        <li><a href="http://aaa.local/alumnator2/index.php">Sandbox Lista de Alumnos </a></li>
+        <li><a href="http://aaa.local/tiendaLista/index.php">TIENDA LISTA </a></li>
         
     </ul>
 </body>
