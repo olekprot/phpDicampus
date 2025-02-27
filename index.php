@@ -46,7 +46,8 @@
         <li><a href="http://aaa.local/MySQL/index.php">MySQL</a></li>
         <li><a href="http://aaa.local/BDList/index.php">Basa de datos con clubs</a></li>
         <li><a href="http://aaa.local/listaDeAlumnos/index.php">Lista de alumnos en mobile</a></li>
-        <li><a href="http://aaa.local/alumnator2/index.php">Sandbox Lista de Alumnos </a></li>
+        <li><a href="http://aaa.local/alumnator2/index.php">Alumnator LOCAL </a></li>
+        <li><a href="http://www.protyniak.com.mialias.net/alumnator_WEB/index.php">Alumnator WEB </a></li>
         <li><a href="http://aaa.local/tiendaLista/index.php">TIENDA LISTA </a></li>
         
     </ul>

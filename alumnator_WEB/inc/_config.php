@@ -1,25 +1,6 @@
 <?php
 
-// Instalación en el servidor
-const URL= 'http://aaa.local/alumnator2';     // Cambiar este valor por la ruta de tu servidor / proyecto
-
-// Datos de conexión con la base de datos
-const HOST ='localhost';
-const USER  ='root';
-const PASS  ='root';
-const DBNA  ='alumnator';
-
-// ------------------------------
-
-
-
-
-
-
-//--------
-
-
-
+const URL= '.';     // Cambiar este valor por la ruta de tu servidor / proyecto
 // Ejemplo:
 // const URL ='http://aa.local/sandbox';
 // const URL ='.'; Si no sabes que poner pero no podrás subir de la carpeta install
@@ -30,12 +11,6 @@ const TITULO_SITE='Alumnator';
 const DESCRIPCION='Sistema para la administracion de alumnos en plataforma de formación.';
 const INSTAGRAM='https://instagram.com/alumnator';
 const BLUESKY='https://bluesky.com/alumnator';
-
-
-
-
-
-
 
 
 define('DATOS', [
@@ -71,7 +46,6 @@ const DATOS_MENUPRINCIPAL=[
     ['Instagram', INSTAGRAM,        1,      'ext',          'Instagram'],
     ['Bluesky',   BLUESKY ,         1,      'ext',          'Bluesky'],
     ['Alumno',   'infoAlumno.php' , 0,      '',             'Alumno'],
-    ['Cursos',   'cursos.php' , 0,      '',             'Cursos'],
     ['Instalar',  'install' , 0,        'admin',        'Instalación inicial de la Base de Datos'],
 ];
 const DATOS_MENULEGAL=[
@@ -163,54 +137,5 @@ function titulo() {
   
   // Si la variable $titulo está declarada escribe $titulo + TITULO_SITE, si no sólo TITULO_SITE
   echo (isset($titulo) ? $titulo.' - ' : '') . TITULO_SITE;
-}
-
-
-
-
-
-
-/*
-<!-- 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-::    ____  ___   _____ ______   ____  ______   ____  ___  __________  _____::
-::   / __ )/   | / ___// ____/  / __ \/ ____/  / __ \/   |/_  __/ __ \/ ___/::
-::  / __  / /| | \__ \/ __/    / / / / __/    / / / / /| | / / / / / /\__ \ ::
-:: / /_/ / ___ |___/ / /___   / /_/ / /___   / /_/ / ___ |/ / / /_/ /___/ / ::
-::/_____/_/  |_/____/_____/  /_____/_____/  /_____/_/  |_/_/  \____//____/  ::
-::                                                                          ::
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
--->
-*/
-
-
-
-// Configuración de la conexión con la base de datos y consultas
-function consulta($sql, $devolver=false, $mensaje="La consulta se ha realizado correctamente"){
-   
-    // Crear conexión
-    $conn = mysqli_connect(HOST, USER, PASS, DBNA);
-
-    // Chequear coneción
-    if (!$conn) { die("Conexión fallida: " . mysqli_connect_error()); }
-
-    //Realizar Consulta a la Base de Datos
-    $resultado = mysqli_query($conn, $sql);
-    
-    if($devolver){
-        return $resultado;
-    }
-    else{
-        if (mysqli_query($conn, $sql)) {
-            echo "<h2>$mensaje</h2>";
-            } else {
-            echo "Error al realizar la consulta:" . mysqli_error($conn);
-            }
-    }
-
-    //Cerramos conexión
-    mysqli_close($conn);
 }
 
