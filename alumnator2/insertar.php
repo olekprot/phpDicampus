@@ -5,27 +5,29 @@ datos"?>
 
 <section id="agregar">
     <h2>Agregar Nuevo Alumno</h2>
-    <form action="_insertar_alumno.php" method="POST" enctype="multipart/form-data">
-        <label for="nombre">Nombre del alumno:</label>
+    <form action="_insertar-alumno.php" method="POST" enctype="multipart/form-data">
+
+        <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
-        <label for="apellido">Apellidos:</label>
-        <input type="text" id="apellido" name="apellido" required>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="fecha_nacimiento">Fecha Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-
-        <label for="fecha_nacimiento">Fecha de acimiento:</label>
-        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
-
+        
         <label for="curso">Curso:</label>
         <input type="text" id="curso" name="curso" required>
-
-        <label for="foto">Foto:</label>
-        <input type="file" id="foto" name="foto">
         
-        <label for="descripcion">Description:</label>
-        <input type="text" id="descripcion" name="descripcion">
+        
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+
+        <label for="descripcion">Descripción:</label>
+        <textarea type="text" id="descripcion" name="descripcion"></textarea>
 
         <button type="submit">Insertar Alumno</button>
     </form>
